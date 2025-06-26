@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using Cysharp.Threading.Tasks; ///////////////////////
+using Cysharp.Threading.Tasks;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
 using Unity.Services.Multiplayer;
 using UnityEngine;
-using UnityUtils; /////////////////////
+using UnityUtils;
 
 public class SessionManager : Singleton<SessionManager> {
     ISession activeSession;
@@ -17,8 +17,6 @@ public class SessionManager : Singleton<SessionManager> {
             Debug.Log($"Active session: {activeSession}");
         }
     }
-
-    private string sessionName = "MySession";
     
     const string playerNamePropertyKey = "playerName";
 
@@ -27,15 +25,9 @@ public class SessionManager : Singleton<SessionManager> {
             await UnityServices.InitializeAsync(); // Initialize Unity Gaming Services SDKs.
             await AuthenticationService.Instance.SignInAnonymouslyAsync(); // Anonymously authenticate the player
             Debug.Log($"Sign in anonymously succeeded! PlayerID: {AuthenticationService.Instance.PlayerId}");
-
-
-            var options = new SessionOptions()
-            {
-                Name = sessionName,
-                MaxPlayers = 4
-            }.WithDistributedAuthorityNetwork();
-
-            ActiveSession = await MultiplayerService.Instance.CreateOrJoinSessionAsync(sessionName, options);
+            
+            // Start a new session as a host
+            StartSessionAsHost();
         }
         catch (Exception e) {
             Debug.LogException(e);
