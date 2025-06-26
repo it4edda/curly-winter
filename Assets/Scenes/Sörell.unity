@@ -1290,6 +1290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipedQuarts:
   - {fileID: 11400000, guid: 5cb57f4ed30cecf4b84b7007b43522ca, type: 2}
+  - {fileID: 11400000, guid: 5cb57f4ed30cecf4b84b7007b43522ca, type: 2}
   currentProperties: []
 --- !u!4 &1594463923
 Transform:
