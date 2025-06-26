@@ -10,24 +10,39 @@ public class Orbment : MonoBehaviour
 
     void Start()
     {
+        ElementalValueCheck();
+    }
+
+    void ElementalValueCheck()
+    {
         Debug.Log("Started");
-        foreach (ElementalProperties elementalProperties in equipedQuarts.SelectMany(quarts => quarts.elementalPropertiesList))
+        foreach (ElementalProperties elementalProperty in equipedQuarts.SelectMany(quarts => quarts.elementalPropertiesList))
         {
             Debug.Log("middle");
+            bool isInList = false;
+
             for (var i = 0; i < currentProperties.Count; i++)
             {
                 ElementalProperties currentProperty = currentProperties[i];
-                if (currentProperty.elements == elementalProperties.elements)
+                if (currentProperty.elements == elementalProperty.elements)
                 {
-                    currentProperty.numberOfElement += elementalProperties.numberOfElement;
+                    isInList = true;
+                    currentProperty.numberOfElement += elementalProperty.numberOfElement;
                     currentProperties[i] = currentProperty;
                 }
-                else
-                {
-                    currentProperties.Add(elementalProperties);
-                }
+            }
+
+            if (!isInList)
+            {
+                currentProperties.Add(elementalProperty);
             }
         }
+        ArtsCheck();
+    }
+
+    void ArtsCheck()
+    {
+        
     }
 }
 [Serializable]
