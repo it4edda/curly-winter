@@ -6,7 +6,10 @@ using Unity.Services.Core;
 using Unity.Services.Multiplayer;
 using UnityEngine;
 using UnityUtils;
-
+// NETWORKING TUTORIALS:
+    // 1st:       https://www.youtube.com/watch?v=Ndixa64p3dQ
+    // 2nd:       https://www.youtube.com/watch?v=SZjpm950g_c 
+//
 public class SessionManager : Singleton<SessionManager> {
     ISession activeSession;
 
