@@ -11,7 +11,7 @@ public class PlayerMovement : NetworkBehaviour
     [SerializeField] Animator anim;
     Vector2 moveVal;
     Vector3 forceToApply;
-
+    
     void Start()
     {
         rb.maxLinearVelocity = topSpeed;
