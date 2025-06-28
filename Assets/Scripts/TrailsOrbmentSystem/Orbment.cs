@@ -7,6 +7,7 @@ public class Orbment : MonoBehaviour
 {
     [SerializeField] List<Quarts> equipedQuarts = new();
     [SerializeField] List<ElementalProperties> currentProperties = new();
+    [SerializeField] List<Art> usableArts = new();
 
     void Start()
     {
@@ -42,7 +43,10 @@ public class Orbment : MonoBehaviour
 
     void ArtsCheck()
     {
-        
+        foreach (Art art in from art in ArtManager.Instance.allArts let numOfMatchingElements = currentProperties.Sum(currentProperty => art.ElementalRequirements.Count(requiredProperty => currentProperty.elements == requiredProperty.elements && currentProperty.numberOfElement >= requiredProperty.numberOfElement)) where numOfMatchingElements == art.ElementalRequirements.Count select art)
+        {
+            usableArts.Add(art);
+        }
     }
 }
 [Serializable]
