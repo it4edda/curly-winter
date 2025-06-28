@@ -1160,7 +1160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0bb5ed5d586364093b657b8e960192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   speed: 1
+  topSpeed: 0
   rb: {fileID: 1544751416}
   anim: {fileID: 0}
 --- !u!54 &1544751416
