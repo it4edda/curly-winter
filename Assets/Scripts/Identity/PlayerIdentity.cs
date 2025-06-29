@@ -14,3 +14,11 @@ public enum ChosenClass
     //summoner? Ranger? subclasses ????
 }
 //GIVE PLAYER ITS OWN COLOR AND LET THEM CHOSE CLASS
+
+static class PlayerInformation
+{
+    public static PlayerIdentity player1;
+    public static PlayerIdentity player2;
+    public static PlayerIdentity player3;
+    public static PlayerIdentity player4;
+} 

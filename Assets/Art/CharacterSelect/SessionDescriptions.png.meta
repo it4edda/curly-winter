@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df85de08ad085a644b7efab5eef1f048
+guid: d1892ab46c848c148af8c1bf796da938
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weapons_0
+      name: SessionDescriptions_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 352
+        width: 128
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70dc943692bf9ff42b3fafefc2753f8f
-      internalID: -176100428
+      spriteID: f2b9293fad6ecd44aa9ffbec1599c91e
+      internalID: 334427218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weapons_1
+      name: SessionDescriptions_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 0
+        y: 320
+        width: 128
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,42 +134,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eded7c8d017da3498a99915e19f3b31
-      internalID: 1646239646
+      spriteID: e76a382ce9ccd114fa292da469698dcc
+      internalID: -364956963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weapons_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6701c5d946a521d489ef6cc262181097
-      internalID: 1631356900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weapons_3
+      name: SessionDescriptions_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 288
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adb28c85b3fc82498414c7c41427424
+      internalID: 558116071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SessionDescriptions_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f1b84b8b9ac93489c35cda75c9a07b
+      internalID: 292055246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SessionDescriptions_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 128
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bcc5a44903263f4d893867fb32d3647
-      internalID: -2002349003
+      spriteID: 49b4cafc4f0b1a2419df9df06905fbfa
+      internalID: 1750683579
       vertices: []
       indices: 
       edges: []
@@ -188,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 33d029f392aaa7740a84e83f78d805a3
+    spriteID: 14684305a3b801742ae5e141cb39972e
     internalID: 0
     vertices: []
     indices: 
@@ -198,10 +220,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Weapons_0: -176100428
-      Weapons_1: 1646239646
-      Weapons_2: 1631356900
-      Weapons_3: -2002349003
+      SessionDescriptions_0: 334427218
+      SessionDescriptions_1: -364956963
+      SessionDescriptions_2: 558116071
+      SessionDescriptions_3: 292055246
+      SessionDescriptions_4: 1750683579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

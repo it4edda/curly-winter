@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.Netcode;
 using UnityEngine;
 
-public class CharacterSelection : MonoBehaviour
+public class CharacterSelection : NetworkBehaviour
 {
+    /*
     [SerializeField] Transform viewedPlane;
     [SerializeField] private float speed;
     [SerializeField] List<SelectionInfo> rotations = new List<SelectionInfo>();
@@ -35,12 +37,23 @@ public class CharacterSelection : MonoBehaviour
         //https://www.youtube.com/watch?v=VGUs8bfGapA shatter animation, requires 3dsoftware prolly
         //select the one thats pointing downward
         //DO THROW AND SHATTER ANIMATION
-    }
-}
-
+        
 [Serializable]
 struct SelectionInfo
 {
     public float degrees;
     public PlayerIdentity identity;
 }
+    }*/
+    
+    public void ChooseClass()
+    {
+        //switch (NetworkBehaviour.)
+        {
+            
+        }
+        //PlayerIdentity ident = 
+        //ident.chosenClass = ChosenClass.Magician;
+    }
+}
+
