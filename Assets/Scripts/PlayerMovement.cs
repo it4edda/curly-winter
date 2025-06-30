@@ -16,6 +16,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         rb.maxLinearVelocity = topSpeed;
     }
+    
 
     void FixedUpdate()
     {

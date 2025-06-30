@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Edmlam.unity
     guid: 80ba190c5d5a3974a8c07458b1e61c1c
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 833d56245b0a7cc458ccac42c339b8c8, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 37934acf286aed64fb81dd1725750ac2, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

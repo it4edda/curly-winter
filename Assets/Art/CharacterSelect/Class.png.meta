@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1892ab46c848c148af8c1bf796da938
+guid: e4fe1858cfdd01f4ebe01cc3a9a24680
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,122 +97,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SessionDescriptions_0
+      name: Class_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 352
-        width: 128
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2b9293fad6ecd44aa9ffbec1599c91e
-      internalID: 334427218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SessionDescriptions_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 128
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e76a382ce9ccd114fa292da469698dcc
-      internalID: -364956963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SessionDescriptions_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 288
-        width: 128
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7adb28c85b3fc82498414c7c41427424
-      internalID: 558116071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SessionDescriptions_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50f1b84b8b9ac93489c35cda75c9a07b
-      internalID: 292055246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SessionDescriptions_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 128
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49b4cafc4f0b1a2419df9df06905fbfa
-      internalID: 1750683579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SessionDescriptions_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 128
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -222,19 +112,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e46d78429c09ac438e34d64089eebc1
-      internalID: -1029038539
+      spriteID: 5cba87bea43fc7a4295c19a46d5441b4
+      internalID: 2021175791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SessionDescriptions_6
+      name: Class_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 128
+        x: 32
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,19 +134,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7995b01cd2ff9e8468e3af4cb4950860
-      internalID: -1754191773
+      spriteID: a097b32233302fe42adb66a56b36bcb4
+      internalID: 1838897765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SessionDescriptions_7
+      name: Class_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 128
+        y: 0
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -266,8 +156,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15cd0dc5314262a499044ab7351e046a
-      internalID: -224366288
+      spriteID: c347cc96b9244094b8cd305e66669bdf
+      internalID: 1396901702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Class_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f559b2d3b69e64aac69ca4cc0fab61
+      internalID: -1570348791
       vertices: []
       indices: 
       edges: []
@@ -276,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 14684305a3b801742ae5e141cb39972e
+    spriteID: be7208d6359ed9c439b9fc6a36fc3f88
     internalID: 0
     vertices: []
     indices: 
@@ -286,14 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SessionDescriptions_0: 334427218
-      SessionDescriptions_1: -364956963
-      SessionDescriptions_2: 558116071
-      SessionDescriptions_3: 292055246
-      SessionDescriptions_4: 1750683579
-      SessionDescriptions_5: -1029038539
-      SessionDescriptions_6: -1754191773
-      SessionDescriptions_7: -224366288
+      Class_0: 2021175791
+      Class_1: 1838897765
+      Class_2: 1396901702
+      Class_3: -1570348791
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
