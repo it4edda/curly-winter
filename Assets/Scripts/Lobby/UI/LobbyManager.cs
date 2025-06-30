@@ -1,36 +1,20 @@
-using UnityEngine;
 using Unity.Netcode;
+using UnityEngine;
 using UnityEngine.UI;
 
-public enum PlayerClass
-{
-    Tank,
-    Sword,
-    Mage,
-    Priest
-}
-
-public class LobbyManager : NetworkBehaviour
+public class LobbyManager : MonoBehaviour
 {
     [Header("UI References")]
     [SerializeField] private Button[] colorButtons;
     [SerializeField] private Button[] classButtons;
 
-    [Header("Player Customization")]
-    [SerializeField] private Color[] availableColors;
-    
-    private NetworkVariable<int> selectedColorIndex = new NetworkVariable<int>(0);
-    private NetworkVariable<PlayerClass> selectedClass = new NetworkVariable<PlayerClass>(PlayerClass.Tank);
+    private PlayerCustomization localPlayerCustomization;
 
     private void Start()
     {
-        if (IsHost)
-        {
-            // Host initial setup
-            selectedColorIndex.Value = 0;
-            selectedClass.Value = PlayerClass.Tank;
-        }
-
+        // Wait for local player to spawn
+        NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnected;
+        
         // Setup color buttons
         for (int i = 0; i < colorButtons.Length; i++)
         {
@@ -44,57 +28,32 @@ public class LobbyManager : NetworkBehaviour
             int index = i;
             classButtons[i].onClick.AddListener(() => OnClassSelected((PlayerClass)index));
         }
+    }
 
-        // Subscribe to changes
-        selectedColorIndex.OnValueChanged += OnColorChanged;
-        selectedClass.OnValueChanged += OnClassChanged;
+    private void OnClientConnected(ulong clientId)
+    {
+        if (clientId == NetworkManager.Singleton.LocalClientId)
+        {
+            localPlayerCustomization = NetworkManager.Singleton.LocalClient.PlayerObject
+                .GetComponent<PlayerCustomization>();
+        }
     }
 
     private void OnColorSelected(int colorIndex)
     {
-        if (IsClient && IsOwner)
-        {
-            selectedColorIndex.Value = colorIndex;
-        }
+        localPlayerCustomization?.SelectColor(colorIndex);
     }
 
     private void OnClassSelected(PlayerClass playerClass)
     {
-        if (IsClient && IsOwner)
+        localPlayerCustomization?.SelectClass(playerClass);
+    }
+
+    private void OnDestroy()
+    {
+        if (NetworkManager.Singleton != null)
         {
-            selectedClass.Value = playerClass;
+            NetworkManager.Singleton.OnClientConnectedCallback -= OnClientConnected;
         }
-    }
-
-    private void OnColorChanged(int oldValue, int newValue)
-    {
-        // Update visuals when color changes
-        if (IsOwner)
-            {
-                var playerCustomization = NetworkManager.Singleton.LocalClient.PlayerObject
-                    .GetComponent<PlayerCustomization>();
-                playerCustomization?.UpdateColor(availableColors[newValue]);
-            }
-    }
-
-    private void OnClassChanged(PlayerClass oldValue, PlayerClass newValue)
-    {
-        // Update visuals when class changes
-        if (IsOwner)
-            {
-                var playerCustomization = NetworkManager.Singleton.LocalClient.PlayerObject
-                    .GetComponent<PlayerCustomization>();
-                playerCustomization?.UpdateClass(newValue);
-            }
-    }
-
-    public Color GetSelectedColor()
-    {
-        return availableColors[selectedColorIndex.Value];
-    }
-
-    public PlayerClass GetSelectedClass()
-    {
-        return selectedClass.Value;
     }
 }

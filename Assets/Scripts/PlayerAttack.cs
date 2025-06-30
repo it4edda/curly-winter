@@ -8,7 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject slashObject;
     private void Update()
     {
-        return;
+        
         if (Input.GetKeyDown(KeyCode.L))
         switch (type)
         {

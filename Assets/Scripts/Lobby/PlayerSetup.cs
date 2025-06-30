@@ -1,41 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
-using UnityEngine.EventSystems;
 
 public class PlayerSetup : NetworkBehaviour
 {
     private NetworkVariable<int> playerNumber = new NetworkVariable<int>(0);
-    private NetworkVariable<PlayerClass> playerClass = new NetworkVariable<PlayerClass>(PlayerClass.Tank);
 
     public int PlayerNumber => playerNumber.Value;
-    public PlayerClass PlayerClass => playerClass.Value;
-        
+
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
         
         if (IsServer)
         {
+            playerNumber.Value = PlayerRegistry.Instance.GetNextPlayerNumber();
             PlayerRegistry.Instance.RegisterPlayer(this);
-        }
-    
-        // Initialize after a small delay to ensure networking is ready
-        StartCoroutine(DelayedInitialize());
-    }
-    
-    private IEnumerator DelayedInitialize()
-    {
-        yield return new WaitForSeconds(0.1f);
-        
-        if (IsOwner)
-        {
-            var lobbyManager = FindObjectOfType<LobbyManager>();
-            if (lobbyManager != null)
-            {
-                playerClass.Value = lobbyManager.GetSelectedClass();
-            }
         }
     }
 
@@ -45,26 +24,5 @@ public class PlayerSetup : NetworkBehaviour
         {
             PlayerRegistry.Instance.UnregisterPlayer(OwnerClientId);
         }
-
-        playerNumber.OnValueChanged -= OnPlayerNumberChanged;
-        playerClass.OnValueChanged -= OnPlayerClassChanged;
-    }
-
-    public void SetPlayerNumber(int number)
-    {
-        if (IsServer)
-        {
-            playerNumber.Value = number;
-        }
-    }
-
-    private void OnPlayerNumberChanged(int oldValue, int newValue)
-    {
-        Debug.Log($"Player {OwnerClientId} is now player number {newValue}");
-    }
-
-    private void OnPlayerClassChanged(PlayerClass oldValue, PlayerClass newValue)
-    {
-        Debug.Log($"Player {OwnerClientId} changed class to {newValue}");
     }
 }

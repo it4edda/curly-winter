@@ -26,30 +26,21 @@ public class PlayerRegistry : NetworkBehaviour
         if (!players.ContainsKey(playerSetup.OwnerClientId))
         {
             players.Add(playerSetup.OwnerClientId, playerSetup);
-            playerSetup.SetPlayerNumber(nextPlayerNumber++);
         }
     }
 
     public void UnregisterPlayer(ulong clientId)
     {
-        if (players.ContainsKey(clientId))
-        {
-            players.Remove(clientId);
-        }
+        players.Remove(clientId);
+    }
+
+    public int GetNextPlayerNumber()
+    {
+        return nextPlayerNumber++;
     }
 
     public PlayerSetup GetPlayer(ulong clientId)
     {
         return players.TryGetValue(clientId, out PlayerSetup player) ? player : null;
-    }
-
-    public Dictionary<ulong, PlayerSetup> GetAllPlayers()
-    {
-        return new Dictionary<ulong, PlayerSetup>(players);
-    }
-
-    public int GetPlayerCount()
-    {
-        return players.Count;
     }
 }
