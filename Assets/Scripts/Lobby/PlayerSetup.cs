@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.EventSystems;
@@ -9,22 +11,26 @@ public class PlayerSetup : NetworkBehaviour
 
     public int PlayerNumber => playerNumber.Value;
     public PlayerClass PlayerClass => playerClass.Value;
-
+        
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
-        Debug.Log("1");
+        
         if (IsServer)
         {
             PlayerRegistry.Instance.RegisterPlayer(this);
         }
-
-        playerNumber.OnValueChanged += OnPlayerNumberChanged;
-        playerClass.OnValueChanged += OnPlayerClassChanged;
-
+    
+        // Initialize after a small delay to ensure networking is ready
+        StartCoroutine(DelayedInitialize());
+    }
+    
+    private IEnumerator DelayedInitialize()
+    {
+        yield return new WaitForSeconds(0.1f);
+        
         if (IsOwner)
         {
-            // Initialize with lobby manager settings
             var lobbyManager = FindObjectOfType<LobbyManager>();
             if (lobbyManager != null)
             {

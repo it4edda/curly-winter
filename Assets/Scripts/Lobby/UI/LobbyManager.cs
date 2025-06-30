@@ -70,18 +70,22 @@ public class LobbyManager : NetworkBehaviour
     {
         // Update visuals when color changes
         if (IsOwner)
-        {
-            PlayerCustomization.Instance?.UpdateColor(availableColors[newValue]);
-        }
+            {
+                var playerCustomization = NetworkManager.Singleton.LocalClient.PlayerObject
+                    .GetComponent<PlayerCustomization>();
+                playerCustomization?.UpdateColor(availableColors[newValue]);
+            }
     }
 
     private void OnClassChanged(PlayerClass oldValue, PlayerClass newValue)
     {
         // Update visuals when class changes
         if (IsOwner)
-        {
-            PlayerCustomization.Instance?.UpdateClass(newValue);
-        }
+            {
+                var playerCustomization = NetworkManager.Singleton.LocalClient.PlayerObject
+                    .GetComponent<PlayerCustomization>();
+                playerCustomization?.UpdateClass(newValue);
+            }
     }
 
     public Color GetSelectedColor()
