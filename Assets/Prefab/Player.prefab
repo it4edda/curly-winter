@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 8272148721096688581}
   - component: {fileID: 8421928152937842037}
   - component: {fileID: 4037078954652177738}
+  - component: {fileID: 7885295137264016725}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -806,6 +807,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7885295137264016725}
+        m_TargetAssemblyTypeName: PlayerAdvancedInput, Assembly-CSharp
+        m_MethodName: OnPausePerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: de6594df-4777-457b-918b-645282da5242
+    m_ActionName: 'Player/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -896,6 +913,20 @@ MonoBehaviour:
   - {r: 0.7960785, g: 0.82745105, b: 0.17254902, a: 1}
   - {r: 0.8000001, g: 0.18431373, b: 0.72156864, a: 1}
   - {r: 0.38823533, g: 0.14117648, b: 0.73333335, a: 1}
+--- !u!114 &7885295137264016725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297780069406201044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ada03b4b6e44c740bd7ff1aa377a491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  pauseAction: {fileID: -7291778813771078313, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &8791848695302317789
 GameObject:
   m_ObjectHideFlags: 0
