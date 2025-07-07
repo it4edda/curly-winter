@@ -4,6 +4,9 @@ public class SceneManager : MonoBehaviour
 {
     private string nextScene;
     [SerializeField] Animator trans;
+    [SerializeField] Animator heaven;
+    [SerializeField] GameObject successObj;
+    [SerializeField] GameObject failedObj;
     
     public void InstantLoadScene()
     {
@@ -20,4 +23,21 @@ public class SceneManager : MonoBehaviour
         nextScene = sceneName;
         trans.SetTrigger("Out");
     }
+
+    public void HeavenlyPath(bool loading)
+    {
+        heaven.gameObject.SetActive(true);
+        heaven.SetTrigger(!loading ? "Hide" : "Show");
+    }
+
+    private bool success;
+    public void SetConnectionStatus(bool success)
+    {
+        this.success = success;
+    }
+    public void LoadingToggle()
+    {
+        successObj.SetActive(success);
+        failedObj.SetActive(!success);
+    } 
 }

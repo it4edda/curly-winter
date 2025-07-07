@@ -73,7 +73,7 @@ public class PlayerCustomization : NetworkBehaviour
 
     private void UpdateVisuals(Color color, PlayerClass pClass)
     {
-        Debug.Log(color + "this is the color");
+        //Debug.Log(color + "this is the color");
         playerRenderer.color = color;
         // Activate the appropriate class model
         for (int i = 0; i < classModels.Length; i++)

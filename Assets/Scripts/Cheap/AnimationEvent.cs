@@ -11,4 +11,9 @@ public class AnimationEvent : MonoBehaviour
     {
         sceneMan.InstantLoadScene();
     }
+    public void DoPopup()
+    {
+        sceneMan.LoadingToggle();
+    }
+    
 }
