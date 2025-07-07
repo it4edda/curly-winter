@@ -40,4 +40,5 @@ public class SceneManager : MonoBehaviour
         successObj.SetActive(success);
         failedObj.SetActive(!success);
     } 
+    
 }
