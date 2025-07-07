@@ -1,15 +1,17 @@
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviour
 {
+    #region manager stuff og
     [Header("UI References")]
     [SerializeField] private Button[] colorButtons;
     [SerializeField] private Button[] classButtons;
 
     private PlayerCustomization localPlayerCustomization;
-
+ 
     private void Start()
     {
         // Wait for local player to spawn
@@ -56,4 +58,27 @@ public class LobbyManager : MonoBehaviour
             NetworkManager.Singleton.OnClientConnectedCallback -= OnClientConnected;
         }
     }
+    #endregion
+    #region Visuals
+    [FormerlySerializedAs("anim")]
+    [Header("Visuals")]
+    [SerializeField] private Animator HostAnim;
+    [SerializeField] Animator LeaveAnim;
+    public void HostVisuals(bool isHosting)
+    {
+        HostAnim.SetBool("IsHosting", isHosting);
+        HostAnim.SetTrigger("Active");
+        //if is hosting / show hosting and hide joining
+        //else hide hosting and show joinging
+    }
+    public void InLobbyVisuals(bool inLobby)
+    {
+        LeaveAnim.SetBool("In", inLobby);
+        LeaveAnim.SetTrigger("Active");
+    }
+    #endregion
+    
+    
+    
+    
 }
