@@ -457,7 +457,7 @@ TextureImporter:
         width: 163
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -479,7 +479,7 @@ TextureImporter:
         width: 163
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -501,7 +501,7 @@ TextureImporter:
         width: 212
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -523,7 +523,7 @@ TextureImporter:
         width: 212
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,6 +532,226 @@ TextureImporter:
       bones: []
       spriteID: bbb3492ed7b9f294280a05f0767e8ef3
       internalID: 390203999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_20
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 533
+        width: 75
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9544597c1532d314baf889771254c243
+      internalID: 752276354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_21
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 524
+        width: 75
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e0d6b03201bb449aaf8f988abc74c1
+      internalID: 2043645283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_22
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 470
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecac36acbc90bf44d8049f990b0330c5
+      internalID: -1389855180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 462
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3798dda93f57045bd3b36e64ee6428
+      internalID: 1476140837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_24
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 411
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6282bb96633ca418a6359649d22c46
+      internalID: 104020822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_25
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 411
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1d1730f84823e4aaddee5b972c48d0
+      internalID: -293939572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 448
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e539df63781244a9c9129d66a18106
+      internalID: -1485986364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_27
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 360
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d150601c3ffcd8459df4bc48bfcd357
+      internalID: 570856020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_28
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 367
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96e8cd38a4e0df409f0f2fa200f9864
+      internalID: -1424091252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UltraLarge_29
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 370
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fc83303b428d74f96abad1af654439
+      internalID: 663877506
       vertices: []
       indices: 
       edges: []
@@ -563,6 +783,16 @@ TextureImporter:
       UltraLarge_18: 2077962317
       UltraLarge_19: 390203999
       UltraLarge_2: -1141953019
+      UltraLarge_20: 752276354
+      UltraLarge_21: 2043645283
+      UltraLarge_22: -1389855180
+      UltraLarge_23: 1476140837
+      UltraLarge_24: 104020822
+      UltraLarge_25: -293939572
+      UltraLarge_26: -1485986364
+      UltraLarge_27: 570856020
+      UltraLarge_28: -1424091252
+      UltraLarge_29: 663877506
       UltraLarge_3: 1338481621
       UltraLarge_4: -1104772757
       UltraLarge_5: -1971160178
