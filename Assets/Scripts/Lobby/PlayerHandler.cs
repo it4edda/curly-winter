@@ -7,5 +7,6 @@ public class PlayerHandler : MonoBehaviour
     private void Start()
     {
         Debug.Log("Hello there, in order for the scenes and players to work MÅSTE WILLIAM GÖRA DETTA VGUVFASDGAJKSDIUAGSDJBAJKSBDNBSAUIDBGUWGASJKDÖKW, tack");
+        //players found in registry
     }
 }

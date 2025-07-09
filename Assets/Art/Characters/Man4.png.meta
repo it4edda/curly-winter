@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8007e1c29d634974f9aeb01c08490510
+guid: b760d540cb774b34594dbb7ccf42367f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -57,8 +57,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 4
-  flipbookColumns: 4
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Man_0
+      name: Man4_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,213 +105,213 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44438c0ce947fee438d5b77f301da403
-      internalID: 1079316846
+      spriteID: 7dcac69803410644babdabc83a15b102
+      internalID: -82902649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_1
+      name: Man4_1
       rect:
         serializedVersion: 2
         x: 16
         y: 48
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6430cd8fa844d5498d46a3f810e45fc
-      internalID: -1948867336
+      spriteID: 7f4396ca5f694f542b5c902820c56b83
+      internalID: -88757946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_2
+      name: Man4_2
       rect:
         serializedVersion: 2
         x: 32
         y: 48
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5664756dd4fd14096f48ac71a483d3
-      internalID: -1519981303
+      spriteID: 58c99dc2801cea848a4e93acc9b730a7
+      internalID: -2128491291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_3
+      name: Man4_3
       rect:
         serializedVersion: 2
         x: 48
         y: 48
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2635ab528786f5d428e52992ea107213
-      internalID: 271416214
+      spriteID: 065f0da78ebae17449073cf092a710bf
+      internalID: 1852181221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_4
+      name: Man4_4
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 786988830d1697e4a810c0e1606f7a3b
-      internalID: -773532217
+      spriteID: 661c5569199194046bccd01d99229925
+      internalID: -345876776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_5
+      name: Man4_5
       rect:
         serializedVersion: 2
         x: 16
         y: 32
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 448dd3d040be4084fa684c2861aab7c4
-      internalID: -1842974971
+      spriteID: 2111c2377bf5e644dba699d678252dfc
+      internalID: 996240179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_6
+      name: Man4_6
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a0fc5748c001bd4da4d920b09e2f2d0
-      internalID: -1278942586
+      spriteID: a551b9f7e7cd8bb46b40859ccde73e6a
+      internalID: -2068023010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_7
+      name: Man4_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 0
+        y: 16
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e694658a04784cf488fe1ccba1534425
-      internalID: -1492257724
+      spriteID: 61d562272cc68c94c9d4c8f7db196b1f
+      internalID: 1780353101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_8
+      name: Man4_8
       rect:
         serializedVersion: 2
         x: 16
         y: 16
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08d944ab0f29ea249908c65f74a58e4d
-      internalID: 1851615186
+      spriteID: 4a0702875944ba94586e02e91fd1c9c5
+      internalID: 1110096089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_9
+      name: Man4_9
       rect:
         serializedVersion: 2
         x: 32
         y: 16
         width: 16
         height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8214686e3bd148846be47f1172ae2fb9
-      internalID: -729398254
+      spriteID: 6f8439701fc680a4e9d94494b97fd826
+      internalID: 1198630050
       vertices: []
       indices: 
       edges: []
@@ -320,7 +320,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 360414211cb8d0f4681380278b30e00b
+    spriteID: a377b58139347384f96c08d6ccb26665
     internalID: 0
     vertices: []
     indices: 
@@ -330,16 +330,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Man_0: 1079316846
-      Man_1: -1948867336
-      Man_2: -1519981303
-      Man_3: 271416214
-      Man_4: -773532217
-      Man_5: -1842974971
-      Man_6: -1278942586
-      Man_7: -1492257724
-      Man_8: 1851615186
-      Man_9: -729398254
+      Man4_0: -82902649
+      Man4_1: -88757946
+      Man4_2: -2128491291
+      Man4_3: 1852181221
+      Man4_4: -345876776
+      Man4_5: 996240179
+      Man4_6: -2068023010
+      Man4_7: 1780353101
+      Man4_8: 1110096089
+      Man4_9: 1198630050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

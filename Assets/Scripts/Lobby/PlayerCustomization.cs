@@ -1,11 +1,20 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using Unity.VisualScripting;
+using UnityEngine.U2D.Animation;
+using Random = UnityEngine.Random;
 
 public class PlayerCustomization : NetworkBehaviour
 {
     [SerializeField] private SpriteRenderer playerRenderer;
-    [SerializeField] private GameObject[] classModels; // Assign models in order: Tank, Sword, Mage, Priest
+    [SerializeField] SpriteLibrary library;
+    [SerializeField] SpriteLibraryAsset[] libraryAssets;
+    [SerializeField] private GameObject[] classModels; // Assign models in order:  Sword, Tank,  Mage, Priest
     [SerializeField] private Color[] availableColors; // Assign in inspector
+    
 
     private NetworkVariable<Color> playerColor = new NetworkVariable<Color>(Color.white);
     private NetworkVariable<PlayerClass> playerClass = new NetworkVariable<PlayerClass>(PlayerClass.Tank);
@@ -40,8 +49,8 @@ public class PlayerCustomization : NetworkBehaviour
     public void SelectClass(PlayerClass newClass)
     {
         if (IsOwner)
-        {
-            UpdateClass(newClass);
+        { 
+            playerClass.Value = newClass;
         }
     }
 
@@ -50,14 +59,6 @@ public class PlayerCustomization : NetworkBehaviour
         if (IsOwner)
         {
             playerColor.Value = newColor;
-        }
-    }
-
-    private void UpdateClass(PlayerClass newClass)
-    {
-        if (IsOwner)
-        {
-            playerClass.Value = newClass;
         }
     }
 
@@ -79,13 +80,31 @@ public class PlayerCustomization : NetworkBehaviour
         for (int i = 0; i < classModels.Length; i++)
         {
             classModels[i].SetActive(i == (int)pClass);
+            library.spriteLibraryAsset = libraryAssets[i];
         }
+        
+        /*string label = "Sword";
+        switch (pClass)
+        {
+            case PlayerClass.Tank: label = "Tank"; break;
+            case PlayerClass.Mage: label = "Mage"; break;
+            case PlayerClass.Priest: label = "Supp"; break; 
+            default: label = "Sword"; break;
+        }
+
+        foreach (var i in library.spriteLibraryAsset.GetCategoryNames())
+        {
+            Debug.Log(i + " BLBLLBBLBL");
+            resolver.SetCategoryAndLabel(i, label);
+        }*/
+        
+        
     }
 }
 public enum PlayerClass
 {
+    Sword, //get bullied bitch
     Tank,
-    Sword,
     Mage,
     Priest
 }
