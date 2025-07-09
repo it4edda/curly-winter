@@ -254,7 +254,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -82902649, guid: b760d540cb774b34594dbb7ccf42367f, type: 3}
+  m_Sprite: {fileID: 1079316846, guid: 8007e1c29d634974f9aeb01c08490510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_CategoryHash: 0.009161512
   m_labelHash: 1.0213087e-25
   m_SpriteKey: 0
-  m_SpriteHash: 441314796
+  m_SpriteHash: 866593510
 --- !u!95 &5583184486723389386
 Animator:
   serializedVersion: 7
@@ -961,7 +961,7 @@ MonoBehaviour:
   library: {fileID: 1021105207449255924}
   libraryAssets:
   - {fileID: 7108339969198208228, guid: 2aba593281defe74cbb026c0e53fa841, type: 3}
-  - {fileID: 7108339969198208228, guid: 2aba593281defe74cbb026c0e53fa841, type: 3}
+  - {fileID: 7108339969198208228, guid: 8a907bc9e9155bb4b9ff351f40f8dd28, type: 3}
   - {fileID: 7108339969198208228, guid: eb7868ba1f9ecdb4d8458fbbac2e4252, type: 3}
   - {fileID: 7108339969198208228, guid: fdbc80dc446d9c84dac9530a72fa08b0, type: 3}
   classModels:

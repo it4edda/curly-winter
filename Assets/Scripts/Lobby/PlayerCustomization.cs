@@ -80,22 +80,31 @@ public class PlayerCustomization : NetworkBehaviour
         for (int i = 0; i < classModels.Length; i++)
         {
             classModels[i].SetActive(i == (int)pClass);
-            library.spriteLibraryAsset = libraryAssets[i];
+            
         }
-        
-        /*string label = "Sword";
+
+        int a;
         switch (pClass)
-        {
-            case PlayerClass.Tank: label = "Tank"; break;
-            case PlayerClass.Mage: label = "Mage"; break;
-            case PlayerClass.Priest: label = "Supp"; break; 
-            default: label = "Sword"; break;
+        { 
+            case PlayerClass.Tank: a = 1; break;
+            case PlayerClass.Mage: a = 2; break;
+            case PlayerClass.Priest: a = 3; break; 
+            default: a = 0; break;
         }
+        library.spriteLibraryAsset = libraryAssets[a];
+        /*
+        switch (pClass)
+                {
+                    case PlayerClass.Tank: label = "Tank"; break;
+                    case PlayerClass.Mage: label = "Mage"; break;
+                    case PlayerClass.Priest: label = "Supp"; break; 
+                    default: label = "Sword"; break;
+                }
 
         foreach (var i in library.spriteLibraryAsset.GetCategoryNames())
         {
             Debug.Log(i + " BLBLLBBLBL");
-            resolver.SetCategoryAndLabel(i, label);
+            
         }*/
         
         
