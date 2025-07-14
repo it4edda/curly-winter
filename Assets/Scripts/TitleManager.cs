@@ -10,14 +10,22 @@ public class TitleManager : MonoBehaviour
     bool menuOpen = true;
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && menuOpen)
         {
-            
-            menuOpen = !menuOpen;
+            TitleTrigger(true);
+            /*menuOpen = !menuOpen;
             anyKey.SetActive(menuOpen);
             title.SetTrigger(menuOpen ? "Open" : "Close");
             listParent.SetTrigger(!menuOpen ? "Open" : "Close");
-            //buttons appear
+            *///buttons appear
         }
+    }
+    public void TitleTrigger(bool a)
+    {
+        menuOpen = a;
+        menuOpen = !menuOpen;
+        anyKey.SetActive(menuOpen);
+        title.SetTrigger(menuOpen ? "Open" : "Close");
+        listParent.SetTrigger(!menuOpen ? "Open" : "Close");
     }
 }
