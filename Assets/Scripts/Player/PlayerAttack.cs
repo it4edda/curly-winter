@@ -1,11 +1,16 @@
 using System;
 using System.Linq.Expressions;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] AttackType type;
+    [Header("Melee")]
     [SerializeField] GameObject slashObject;
+    [Header("Mage")]
+    [SerializeField] ParticleSystem magicMissile;
+    [SerializeField] GameObject attractPoint;
     private void Update()
     {
         
@@ -21,6 +26,11 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         slashObject.SetActive(true);
+    }
+    void MagicMissile()
+    {
+        magicMissile.Play();
+        Instantiate(attractPoint, Input.mousePosition, quaternion.identity);
     }
 }
 
